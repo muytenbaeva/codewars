@@ -1,0 +1,7 @@
+def remove (st, n):
+removed_count = 0
+
+result = ""
+for char in st:
+
+
