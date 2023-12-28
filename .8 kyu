@@ -1,7 +1,17 @@
-def remove (st, n):
-removed_count = 0
+def remove(st, n):
+    removed_count = 0
+    
+    result = ""
+    for char in st:
+        if char == "!":
+            if removed_count < n:
+                removed_count += 1
+            else:
+                result += char
+        else:
+            result += char
 
-result = ""
-for char in st:
-
+    return result
+    
+    pass
 
